@@ -90,22 +90,20 @@ var_dump($result->open); // False
 The result of the `check()` method also contains a `until` attribute, which lets you know until when you're open. This attribute is returned as a Carbon instance and only included when `open` is true.
 
 ```php
-$date = '2017-12-05 12:00'; // Let's see if we're open for Christmas
+$date = '2017-12-05 12:00'; // Let's see if we're open this Tuesday in December
 $result = CurrentlyOpen::check($date);
 
 var_dump($result->open); // True
 var_dump($result->until->toDateTimeString()); // 2017-12-05 17:30:00
 ```
 
-If you just want to check if you're open, use the following method:
+If you just want to check if you're open, use the method below. It returns a boolean and also accepts a `$date` variable, as seen above.
 
 ```php
 $result = CurrentlyOpen::checkSimple()
 
 var_dump($result) // True if we're open, false if not
 ```
-
-It returns a boolean and also accepts a `$date` variable, as seen above.
 
 ## Future Roadmap
 
