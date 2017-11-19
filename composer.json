@@ -1,0 +1,42 @@
+{
+    "name": "royscheepens/currently-open",
+    "description": "Currently Open Package for Laravel 5.5+",
+    "version": "0.1.0",
+    "keywords": [
+        "currenlty open",
+        "laravel"
+    ],
+    "homepage": "https://github.com/royscheepens/currently-open",
+    "authors": [
+    {
+        "name": "Roy Scheepens",
+        "email": "roy.scheepens@gmail.com"
+    }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "nesbot/carbon": "~1.20"
+    },
+    "require-dev": {
+        "illuminate/framework": "5.5.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Royscheepens\\CurrentlyOpen\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Royscheepens\\CurrentlyOpen\\CurrentlyOpenServiceProvider"
+            ],
+            "aliases": {
+                "CurrentlyOpen": "Royscheepens\\CurrentlyOpen\\CurrentlyOpenFacade"
+            }
+        }
+    }
+}
