@@ -1,6 +1,6 @@
 <?php
 
-namespace Royscheepens\CurrentlyOpen;
+namespace RoyScheepens\CurrentlyOpen;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +14,7 @@ class CurrentlyOpenServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/currently-open.php' => config_path('currently-open.php'),
+            __DIR__.'/../config/currently-open.php' => config_path('currently-open.php'),
         ], 'config');
     }
 
@@ -32,7 +32,7 @@ class CurrentlyOpenServiceProvider extends ServiceProvider
         $this->app->alias(CurrentlyOpen::class, 'currently-open');
 
         $this->mergeConfigFrom(
-            __DIR__.'/config/currently-open.php', 'currently-open'
+            __DIR__.'/../config/currently-open.php', 'currently-open'
         );
     }
 }

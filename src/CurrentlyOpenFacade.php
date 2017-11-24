@@ -1,6 +1,6 @@
 <?php
 
-namespace Royscheepens\CurrentlyOpen;
+namespace RoyScheepens\CurrentlyOpen;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,8 +11,8 @@ class CurrentlyOpenFacade extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor() 
-    { 
-      return 'currently-open'; 
+    protected static function getFacadeAccessor()
+    {
+      return 'currently-open';
   }
 }

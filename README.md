@@ -21,7 +21,7 @@ And add the service provider in `config/app.php`
 ```php
 'providers' => [
     ........,
-    Royscheepens\CurrentlyOpen\CurrentlyOpenServiceProvider::class,
+    RoyScheepens\CurrentlyOpen\CurrentlyOpenServiceProvider::class,
 ]
 ```
 
@@ -29,14 +29,14 @@ If you want to use the facade, add this to your facades in `config/app.php`
 ```php
 'aliases' => [
     ........,
-    'CurrentlyOpen' => Royscheepens\CurrentlyOpen\CurrentlyOpenFacade::class,
+    'CurrentlyOpen' => RoyScheepens\CurrentlyOpen\CurrentlyOpenFacade::class,
 ]
 
 ```
 
 To publish the configuration file, run
 ```
-php artisan vendor:publish --provider="Royscheepens\CurrentlyOpen\CurrentlyOpenServiceProvider"
+php artisan vendor:publish --provider="RoyScheepens\CurrentlyOpen\CurrentlyOpenServiceProvider"
 ```
 
 ## Configuration

@@ -1,6 +1,6 @@
 <?php
 
-namespace Royscheepens\CurrentlyOpen;
+namespace RoyScheepens\CurrentlyOpen;
 
 use Illuminate\Support\Str;
 use Carbon\Carbon;

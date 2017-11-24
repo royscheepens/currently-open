@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Royscheepens\\CurrentlyOpen\\": "src/"
+            "RoyScheepens\\CurrentlyOpen\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -32,10 +32,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Royscheepens\\CurrentlyOpen\\CurrentlyOpenServiceProvider"
+                "RoyScheepens\\CurrentlyOpen\\CurrentlyOpenServiceProvider"
             ],
             "aliases": {
-                "CurrentlyOpen": "Royscheepens\\CurrentlyOpen\\CurrentlyOpenFacade"
+                "CurrentlyOpen": "RoyScheepens\\CurrentlyOpen\\CurrentlyOpenFacade"
             }
         }
     }
